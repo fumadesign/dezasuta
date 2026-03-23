@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*課題2-①*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 20px;
+}
+
+.blue-box {
+    width: 300px;
+    height: 300px;
+    color: #ffffff;
+    background-color: rgb(76, 41, 250);
+}
+
+/*課題2-②*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.red-box {
+    width: 300px;
+    height: 300px;
+    color: #ffffff;
+    background-color: rgb(255, 0, 0);
+}
+
+/*課題2-③④*/
+@media (max-width: 768px;) {
+ .header-inner{
+    max-width: 960px;
+    margin : auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .nav {
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .nav li{
+    padding: 0 15px;
+ }
+
+/*liタグ要素の間だけに縦線をひく（一番右端線はなし）*/
+ .nav li:not(:last-child) {
+border-right: 1px solid #000;
+ }
+
+}
